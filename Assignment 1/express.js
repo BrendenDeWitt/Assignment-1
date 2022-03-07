@@ -9,6 +9,11 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 
+function test_print()
+{
+         console.log(“test code”)
+}
+
 // Was used to get the information from the json file and show it on the console
 app.get('/assigment1', function (req, res) {
    fs.readFile( __dirname + "/" + "tweets.json", 'utf8', function (err, data) {
