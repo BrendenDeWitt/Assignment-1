@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--This is the title of the web page-->
+		<title>Assignment 1</title>
+
+        <!--This calls the express.js file-->
+		<script src="express.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+		<!--Button that when pressed would create a table with all the required values-->
+        <center><button id="show">Get Tweet Info</button></center>
+        <br>
+        <form id="form1" method="POST">
+		<!--This creates a table that would allow the user to input the required values and create a new tweet to be added to the table-->
+        <table id='myTable' style="margin-left:auto; margin-right:auto;">
+            <tr>
+				<!--First column with a text field to input the date-->
+                <td><label>Date</label></td>
+                <td><input class="form-control" type="text" name="date" id="date" required></td>
+                </tr>
+				<tr>
+				<!--Second column with a text field to input the ID-->
+                <td><label>ID</label></td>
+                <td><input class="form-control" type="text" name="id" id="id" required></td>
+                </tr>
+                <tr>
+				<!--Third column with a text field to input the ScreenName-->
+                <td><label>ScreenName</label></td>
+                <td><input class="form-control" type="text" name="ScreenName" id="ScreenName" required></td>
+                </tr>
+                <tr>
+				<!--Fourth column with a text field to input the Text-->
+                <td><label>Text</label></td>
+                <td><input class="form-control" type="text" name="Text" id="Text" required></td>
+            </tr>
+    </table>
+        <br>
+		<!--Button that would allow the user to submit the inputted information-->
+        <center><button type="Submit" id="add" class="add-success">Submit</button></center>
+        </form>
+        <br />
+		<!--This is the table that would have stores the tweets gotten from the json file and any tweets the user added-->
+        <table id="myTable" style="margin-left:auto: margin-right:auto;">
+                <thead>
+                        <tr>
+                                <th>Date</th>
+                                <th>ID</th>
+                                <th>ScreenName</th>
+                                <th>Text</th>
+                        </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+        </table>
+</body>
+</html>
